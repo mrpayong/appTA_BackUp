@@ -145,11 +145,11 @@ COPY "auth"."sso_domains" ("id", "sso_provider_id", "domain", "created_at", "upd
 
 COPY "public"."users" ("id", "clerkUserId", "email", "imageUrl", "createdAt", "updatedAt", "role", "Fname", "Lname", "username") FROM stdin;
 0e59c147-d65c-4dd4-b651-2047939fdb29	user_2yu6DRsz5P6ClbuiSA5rEHsbESy	tristanpayong@gmail.com	https://img.clerk.com/eyJ0eXBlIjoiZGVmYXVsdCIsImlpZCI6Imluc18yczg3eW1WeUdKUWV6d0J3SW0wc3FZRDVIQWwiLCJyaWQiOiJ1c2VyXzJ5dTZEUnN6NVA2Q2xidWlTQTVyRUhzYkVTeSIsImluaXRpYWxzIjoiVFAifQ	2025-06-23 09:59:22.638	2025-06-23 09:59:22.638	SYSADMIN	Tristan	Payong	devuser
-61fd5b0f-53ed-404e-b410-de982f4aacca	user_2yuFjWF5A5hW1I10V0Tl0YtCrsl	payongtristan717@gmail.com	\N	2025-06-23 11:04:46.217	2025-06-24 18:07:45.17	ADMIN	Jackson\n	Smith	devuser2
 b01ebe6d-1142-4054-9f0f-bc994f0ad8bc	user_2zNLfrrEh0D3c2YTNw1UWGCReCA	lachimolala091104@gmail.com	\N	2025-07-03 18:18:11.354	2025-07-11 12:21:36.028	STAFF	Zhunzie	Sioco	lachimolala
 3d54728f-2521-4a97-b2c2-25d740996889	user_2zjFbhSYen75V32QpY7uICHAniH	hmillena@ccc.edu.ph	\N	2025-07-11 12:24:08.903	2025-07-11 12:24:08.903	STAFF	Hasmin	milena	HasminCCC
-ac55238a-e1c3-4275-8087-409123531826	user_2zjDLbop5sTy4meRdyDYfvCBzEm	dmvbulan@ccc.edu.ph	\N	2025-07-11 12:05:33.711	2025-07-11 12:05:33.711	ADMIN	Daniella 	Bulan	DaniellaB
 273efb25-c7c8-4823-9ea3-3ddb2e1366cf	user_2zfpHOxzJpjD23BTc7eS7zqqwND	EditNewEmail@email.com	\N	2025-07-10 07:18:13.318	2025-07-10 07:19:01.566	SYSADMIN	John	Doe	BackUpTrack
+61fd5b0f-53ed-404e-b410-de982f4aacca	user_2yuFjWF5A5hW1I10V0Tl0YtCrsl	payongtristan717@gmail.com	\N	2025-06-23 11:04:46.217	2025-06-24 18:07:45.17	ADMIN	Jackson\n	Michael	devuser2
+ac55238a-e1c3-4275-8087-409123531826	user_2zjDLbop5sTy4meRdyDYfvCBzEm	dmvbulan@ccc.edu.ph	\N	2025-07-11 12:05:33.711	2025-07-11 12:05:33.711	STAFF	Daniella 	Bulan	DaniellaB
 \.
 
 
