@@ -238,7 +238,7 @@ CREATE TABLE IF NOT EXISTS "public"."accounts" (
     "town" "text" NOT NULL,
     "zip" "text" NOT NULL,
     "RDO" "text" NOT NULL,
-    "tin" integer[],
+    "tin" "text"[],
     "buildingNumber" "text" NOT NULL
 );
 
