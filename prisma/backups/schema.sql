@@ -554,32 +554,32 @@ ALTER TABLE ONLY "public"."archives"
 
 
 ALTER TABLE ONLY "public"."cashflow_sub_accounts"
-    ADD CONSTRAINT "cashflow_sub_accounts_cashFlowId_fkey" FOREIGN KEY ("cashFlowId") REFERENCES "public"."Cashflow"("id") ON UPDATE CASCADE ON DELETE RESTRICT;
+    ADD CONSTRAINT "cashflow_sub_accounts_cashFlowId_fkey" FOREIGN KEY ("cashFlowId") REFERENCES "public"."Cashflow"("id") ON UPDATE CASCADE ON DELETE CASCADE;
 
 
 
 ALTER TABLE ONLY "public"."cashflow_sub_accounts"
-    ADD CONSTRAINT "cashflow_sub_accounts_subAccountId_fkey" FOREIGN KEY ("subAccountId") REFERENCES "public"."sub_accounts"("id") ON UPDATE CASCADE ON DELETE RESTRICT;
+    ADD CONSTRAINT "cashflow_sub_accounts_subAccountId_fkey" FOREIGN KEY ("subAccountId") REFERENCES "public"."sub_accounts"("id") ON UPDATE CASCADE ON DELETE CASCADE;
 
 
 
 ALTER TABLE ONLY "public"."sub_account_relations"
-    ADD CONSTRAINT "sub_account_relations_childId_fkey" FOREIGN KEY ("childId") REFERENCES "public"."sub_accounts"("id") ON UPDATE CASCADE ON DELETE RESTRICT;
+    ADD CONSTRAINT "sub_account_relations_childId_fkey" FOREIGN KEY ("childId") REFERENCES "public"."sub_accounts"("id") ON UPDATE CASCADE ON DELETE CASCADE;
 
 
 
 ALTER TABLE ONLY "public"."sub_account_relations"
-    ADD CONSTRAINT "sub_account_relations_parentId_fkey" FOREIGN KEY ("parentId") REFERENCES "public"."sub_accounts"("id") ON UPDATE CASCADE ON DELETE SET NULL;
+    ADD CONSTRAINT "sub_account_relations_parentId_fkey" FOREIGN KEY ("parentId") REFERENCES "public"."sub_accounts"("id") ON UPDATE CASCADE ON DELETE CASCADE;
 
 
 
 ALTER TABLE ONLY "public"."sub_account_transactions"
-    ADD CONSTRAINT "sub_account_transactions_subAccountId_fkey" FOREIGN KEY ("subAccountId") REFERENCES "public"."sub_accounts"("id") ON UPDATE CASCADE ON DELETE RESTRICT;
+    ADD CONSTRAINT "sub_account_transactions_subAccountId_fkey" FOREIGN KEY ("subAccountId") REFERENCES "public"."sub_accounts"("id") ON UPDATE CASCADE ON DELETE CASCADE;
 
 
 
 ALTER TABLE ONLY "public"."sub_account_transactions"
-    ADD CONSTRAINT "sub_account_transactions_transactionId_fkey" FOREIGN KEY ("transactionId") REFERENCES "public"."transactions"("id") ON UPDATE CASCADE ON DELETE RESTRICT;
+    ADD CONSTRAINT "sub_account_transactions_transactionId_fkey" FOREIGN KEY ("transactionId") REFERENCES "public"."transactions"("id") ON UPDATE CASCADE ON DELETE CASCADE;
 
 
 
