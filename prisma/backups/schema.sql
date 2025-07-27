@@ -192,6 +192,18 @@ CREATE TABLE IF NOT EXISTS "public"."Cashflow" (
 ALTER TABLE "public"."Cashflow" OWNER TO "postgres";
 
 
+CREATE TABLE IF NOT EXISTS "public"."Unauthz" (
+    "id" "text" NOT NULL,
+    "IP" "text" NOT NULL,
+    "action" "text" NOT NULL,
+    "meta" "jsonb",
+    "createdAt" timestamp(3) without time zone DEFAULT CURRENT_TIMESTAMP NOT NULL
+);
+
+
+ALTER TABLE "public"."Unauthz" OWNER TO "postgres";
+
+
 CREATE TABLE IF NOT EXISTS "public"."_TransactionToCashflow" (
     "A" "text" NOT NULL,
     "B" "text" NOT NULL
@@ -375,6 +387,11 @@ ALTER TABLE ONLY "public"."ActivityLog"
 
 ALTER TABLE ONLY "public"."Cashflow"
     ADD CONSTRAINT "Cashflow_pkey" PRIMARY KEY ("id");
+
+
+
+ALTER TABLE ONLY "public"."Unauthz"
+    ADD CONSTRAINT "Unauthz_pkey" PRIMARY KEY ("id");
 
 
 
