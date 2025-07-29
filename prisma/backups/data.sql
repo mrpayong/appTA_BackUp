@@ -146,8 +146,8 @@ COPY "auth"."sso_domains" ("id", "sso_provider_id", "domain", "created_at", "upd
 COPY "public"."users" ("id", "clerkUserId", "email", "imageUrl", "createdAt", "updatedAt", "role", "Fname", "Lname", "username") FROM stdin;
 273efb25-c7c8-4823-9ea3-3ddb2e1366cf	user_2zfpHOxzJpjD23BTc7eS7zqqwND	EditNewEmail@email.com	\N	2025-07-10 07:18:13.318	2025-07-10 07:19:01.566	SYSADMIN	John	Doe	BackUpTrack(6)
 ac55238a-e1c3-4275-8087-409123531826	user_2zjDLbop5sTy4meRdyDYfvCBzEm	dmvbulan@ccc.edu.ph	\N	2025-07-11 12:05:33.711	2025-07-12 10:58:43.488	ADMIN	Daniella 	Bulan	DaniellaB
-0e59c147-d65c-4dd4-b651-2047939fdb29	user_2yu6DRsz5P6ClbuiSA5rEHsbESy	tristanpayong@gmail.com	https://img.clerk.com/eyJ0eXBlIjoiZGVmYXVsdCIsImlpZCI6Imluc18yczg3eW1WeUdKUWV6d0J3SW0wc3FZRDVIQWwiLCJyaWQiOiJ1c2VyXzJ5dTZEUnN6NVA2Q2xidWlTQTVyRUhzYkVTeSIsImluaXRpYWxzIjoiVFAifQ	2025-06-23 09:59:22.638	2025-06-23 09:59:22.638	SYSADMIN	Tristan	Payong	devuser
 e774c135-5562-4dbe-89e6-d34864f1a7f4	user_30D7VBuaKZMQtTOAUVveD2kkHW1	payongtristan717@gmail.com	\N	2025-07-22 02:11:50.596	2025-07-22 02:11:50.596	SYSADMIN	Tristan	Payong	devuser2
+0e59c147-d65c-4dd4-b651-2047939fdb29	user_2yu6DRsz5P6ClbuiSA5rEHsbESy	tristanpayong@gmail.com	https://img.clerk.com/eyJ0eXBlIjoiZGVmYXVsdCIsImlpZCI6Imluc18yczg3eW1WeUdKUWV6d0J3SW0wc3FZRDVIQWwiLCJyaWQiOiJ1c2VyXzJ5dTZEUnN6NVA2Q2xidWlTQTVyRUhzYkVTeSIsImluaXRpYWxzIjoiVFAifQ	2025-06-23 09:59:22.638	2025-06-23 09:59:22.638	SYSADMIN	Tristan	Payong	devuser
 b01ebe6d-1142-4054-9f0f-bc994f0ad8bc	user_2zNLfrrEh0D3c2YTNw1UWGCReCA	lachimolala091104@gmail.com	\N	2025-07-03 18:18:11.354	2025-07-21 21:44:58.821	ADMIN	Zhunzie	Sioco	lachimolala
 3d54728f-2521-4a97-b2c2-25d740996889	user_2zjFbhSYen75V32QpY7uICHAniH	hmillena@ccc.edu.ph	\N	2025-07-11 12:24:08.903	2025-07-23 02:01:53.334	ADMIN	Hasmin	milena	HasminCCC
 87f5f75b-8c1e-4adc-aba3-30e3662707b9	user_30JlKoYeDD8dHEDRCcI15AdRz4N	sansaysioco@gmail.com	\N	2025-07-24 10:38:14.381	2025-07-24 10:38:14.381	STAFF	Zhunzie	Sioco	zhunziesioco
@@ -789,6 +789,11 @@ b6ad13f5-1f47-40c1-8718-44b403da02e6	"::1"	getUnauthUser	"{\\"message\\":\\"Unau
 51cdd118-6a45-4c07-a5b7-c7672fc66a2c	"::1"	getUnauthUser	"{\\"message\\":\\"Unauthorized user attempting to access a prohibited page.\\",\\"ip_Add\\":\\"\\\\\\"::1\\\\\\"\\",\\"location\\":{\\"cty\\":\\"unkown city\\",\\"cntry\\":\\"unkown country\\"}}"	2025-07-28 15:53:51.248
 4c1d7cea-fc24-4277-ac80-5529daddaba8	"::1"	getUnauthUser	"{\\"message\\":\\"Unauthorized user attempting to access a prohibited page.\\",\\"ip_Add\\":\\"\\\\\\"::1\\\\\\"\\",\\"location\\":{\\"cty\\":\\"unkown city\\",\\"cntry\\":\\"unkown country\\"}}"	2025-07-28 15:53:51.768
 19918a51-3814-482f-9f04-b649032d0692	"::1"	getUnauthUser	"{\\"message\\":\\"Unauthorized user attempting to access a prohibited page.\\",\\"ip_Add\\":\\"\\\\\\"::1\\\\\\"\\",\\"location\\":{\\"cty\\":\\"unkown city\\",\\"cntry\\":\\"unkown country\\"}}"	2025-07-28 15:53:52.334
+5444b1fd-f9b4-4a71-849c-e53ef3131d6d	"::1"	getUnauthUser	"{\\"message\\":\\"Unauthorized user attempting to access a prohibited page.\\",\\"ip_Add\\":\\"\\\\\\"::1\\\\\\"\\",\\"location\\":{\\"cty\\":\\"unkown city\\",\\"cntry\\":\\"unkown country\\"}}"	2025-07-29 15:15:04.85
+0c808cf8-f241-45af-8ece-d4e643bc357b	"::1"	getUnauthUser	"{\\"message\\":\\"Unauthorized user attempting to access a prohibited page.\\",\\"ip_Add\\":\\"\\\\\\"::1\\\\\\"\\",\\"location\\":{\\"cty\\":\\"unkown city\\",\\"cntry\\":\\"unkown country\\"}}"	2025-07-29 15:16:10.53
+a1f173e1-ad66-48ba-9230-98df4956da79	"::1"	getUnauthUser	"{\\"message\\":\\"Unauthorized user attempting to access a prohibited page.\\",\\"ip_Add\\":\\"\\\\\\"::1\\\\\\"\\",\\"location\\":{\\"cty\\":\\"unkown city\\",\\"cntry\\":\\"unkown country\\"}}"	2025-07-29 15:16:11.307
+26e8fb66-6aa3-44e8-8c1a-e5e81cc8f288	"::1"	getUnauthUser	"{\\"message\\":\\"Unauthorized user attempting to access a prohibited page.\\",\\"ip_Add\\":\\"\\\\\\"::1\\\\\\"\\",\\"location\\":{\\"cty\\":\\"unkown city\\",\\"cntry\\":\\"unkown country\\"}}"	2025-07-29 15:16:11.64
+fbce25c4-9750-4929-8c53-0251df12a156	"::1"	getUnauthUser	"{\\"message\\":\\"Unauthorized user attempting to access a prohibited page.\\",\\"ip_Add\\":\\"\\\\\\"::1\\\\\\"\\",\\"location\\":{\\"cty\\":\\"unkown city\\",\\"cntry\\":\\"unkown country\\"}}"	2025-07-29 15:16:19.77
 \.
 
 
