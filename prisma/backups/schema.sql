@@ -1,5 +1,4 @@
 
-\restrict adZ7bSDxB8jaxsmIouVDvy3zd59DnAP5KSbGh4NSFdkBdvfRL1V7bih4137cOHV
 
 
 SET statement_timeout = 0;
@@ -847,6 +846,5 @@ REVOKE USAGE ON SCHEMA "public" FROM PUBLIC;
 
 
 
-\unrestrict adZ7bSDxB8jaxsmIouVDvy3zd59DnAP5KSbGh4NSFdkBdvfRL1V7bih4137cOHV
 
 RESET ALL;
