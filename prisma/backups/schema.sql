@@ -187,7 +187,9 @@ CREATE TABLE IF NOT EXISTS "public"."Cashflow" (
     "createdAt" timestamp(3) without time zone DEFAULT CURRENT_TIMESTAMP NOT NULL,
     "activityTotal" double precision[],
     "periodCashFlow" "public"."CashFlowPeriod" DEFAULT 'DAILY'::"public"."CashFlowPeriod" NOT NULL,
-    "updatedAt" timestamp(3) without time zone DEFAULT CURRENT_TIMESTAMP NOT NULL
+    "updatedAt" timestamp(3) without time zone DEFAULT CURRENT_TIMESTAMP NOT NULL,
+    "FinalCreate" boolean DEFAULT false NOT NULL,
+    "voided" boolean DEFAULT false NOT NULL
 );
 
 
@@ -358,7 +360,9 @@ CREATE TABLE IF NOT EXISTS "public"."transactions" (
     "updatedAt" timestamp(3) without time zone NOT NULL,
     "refNumber" "text" NOT NULL,
     "particular" "text",
-    "printNumber" "text" NOT NULL
+    "printNumber" "text" NOT NULL,
+    "voided" boolean DEFAULT false NOT NULL,
+    "reason" "text"
 );
 
 
