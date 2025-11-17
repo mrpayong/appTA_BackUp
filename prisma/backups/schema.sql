@@ -362,7 +362,8 @@ CREATE TABLE IF NOT EXISTS "public"."transactions" (
     "particular" "text",
     "printNumber" "text" NOT NULL,
     "voided" boolean DEFAULT false NOT NULL,
-    "reason" "text"
+    "reason" "text",
+    "voidingDate" timestamp(3) without time zone
 );
 
 
