@@ -189,7 +189,9 @@ CREATE TABLE IF NOT EXISTS "public"."Cashflow" (
     "periodCashFlow" "public"."CashFlowPeriod" DEFAULT 'DAILY'::"public"."CashFlowPeriod" NOT NULL,
     "updatedAt" timestamp(3) without time zone DEFAULT CURRENT_TIMESTAMP NOT NULL,
     "FinalCreate" boolean DEFAULT false NOT NULL,
-    "voided" boolean DEFAULT false NOT NULL
+    "voided" boolean DEFAULT false NOT NULL,
+    "voidingDate" timestamp(3) without time zone,
+    "reason" "text"
 );
 
 
